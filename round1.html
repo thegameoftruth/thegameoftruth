@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitter Truths and Sweet Lies</title>
+    <style>
+        /* Add CSS styles for the game page */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            width: 300px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .question {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .options {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .option-button {
+            flex: 1;
+            padding: 10px;
+            background-color: #1877f2;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-right: 10px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .option-button:hover {
+            background-color: #1353d1;
+            transform: scale(1.1); /* Add scaling animation on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bitter Truths and Sweet Lies</h1>
+        <div class="question">
+            <!-- Display a question/statement here -->
+            Is the moon made of cheese?
+        </div>
+        <div class="options">
+            <button class="option-button" onclick="voteTrue()">True</button>
+            <button class="option-button" onclick="voteFalse()">False</button>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript functions to handle voting
+        function voteTrue() {
+            // Handle the true vote
+            // You can add animation effects here
+            alert("Correct! The moon is not made of cheese.");
+        }
+
+        function voteFalse() {
+            // Handle the false vote
+            // You can add animation effects here
+            alert("Incorrect! The moon is not made of cheese.");
+        }
+    </script>
+</body>
+</html>
+

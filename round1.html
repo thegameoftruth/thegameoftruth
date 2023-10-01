@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bitter Truths and Sweet Lies</title>
+    <title>Round 1 - The Game of 12th</title>
     <style>
-        /* Add CSS styles for the game page */
+        /* Add CSS styles for the game page (round1.html) */
         body {
             font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
+            background-image: url('/Users/krishnavengurlekar/Pictures/Photos Library.photoslibrary/originals/5/536F4E04-47D8-4ED4-ABF9-CDBA9240FE0B.jpeg'); /* Replace 'your-image-url.jpg' with the actual path or URL to your image */
+            background-size: cover; /* This will make the image cover the entire body */
+            background-repeat: no-repeat; /* Prevent the image from repeating */
+            background-attachment: fixed; /* Fixed background image */
             margin: 0;
             padding: 0;
             display: flex;
@@ -18,8 +21,8 @@
         }
 
         .container {
-            background-color: #fff;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            background-color: rgba(236, 236, 236, 0.1); /* Add a semi-transparent white background to make content readable on the image */
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
             padding: 20px;
             border-radius: 5px;
             text-align: center;
@@ -31,62 +34,24 @@
             margin-bottom: 20px;
         }
 
-        .question {
+        p {
             font-size: 18px;
-            margin-bottom: 20px;
-        }
-
-        .options {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .option-button {
-            flex: 1;
-            padding: 10px;
-            background-color: #1877f2;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-            margin-right: 10px;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-        }
-
-        .option-button:hover {
-            background-color: #1353d1;
-            transform: scale(1.1); /* Add scaling animation on hover */
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Bitter Truths and Sweet Lies</h1>
-        <div class="question">
-            <!-- Display a question/statement here -->
-            Is the moon made of cheese?
-        </div>
-        <div class="options">
-            <button class="option-button" onclick="voteTrue()">True</button>
-            <button class="option-button" onclick="voteFalse()">False</button>
-        </div>
+        <h1>Welcome to Round 1</h1>
+        <p>The first round of the game "Bitter Truths and Sweet Lies (Part 1)" is going to start on September 27 at 4 PM.</p>
+        <ol>
+            <li>Rules:</li>
+            <li>The game will only speak the truth.</li>
+            <li>"Bitter truths" and "sweet lies" will be displayed about the students on the screen, and you have to vote for "truth" or "lie".</li>
+            <li>The answers to those questions have already been confirmed and will be displayed one day after the game.</li>
+            <li>The voting results will be shown to the general public, revealing what students really think about you.</li>
+            <li>The answers will speak the truth and are not influenced by voting.</li>
+        </ol>
     </div>
-
-    <script>
-        // JavaScript functions to handle voting
-        function voteTrue() {
-            // Handle the true vote
-            // You can add animation effects here
-            alert("Correct! The moon is not made of cheese.");
-        }
-
-        function voteFalse() {
-            // Handle the false vote
-            // You can add animation effects here
-            alert("Incorrect! The moon is not made of cheese.");
-        }
-    </script>
 </body>
 </html>
 
